@@ -76,6 +76,18 @@ RUN yarn install --production
 CMD ["node", "app/src/index.js"]
 ```
 
+## Build a container
+```bash
+docker build -t <IMAGE_NAME>
+```
+
+### Expose the port to local network
+```bash
+docker run -dp <LISTENING_PORT>:<LISTENING_PORT> <IMAGE_NAME>
+```
+
+
+
 
 
 
