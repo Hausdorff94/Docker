@@ -81,10 +81,20 @@ CMD ["node", "app/src/index.js"]
 docker build -t <IMAGE_NAME>
 ```
 
-### Expose the port to local network
+### Expose ports to local network
 ```bash
 docker run -dp <LISTENING_PORT>:<LISTENING_PORT> <IMAGE_NAME>
 ```
+### Volumes in docker
+```bash
+docker run -d -v <ORIGIN_PATH>/<PATH> -p <LISTENING_PORT>:<LISTENING_PORT> <IMAGE_NAME>
+```
+
+#### Example
+```bash
+docker run -d -v /Users/kbs/example-docker/app/etc/todos -p 3000:3000 getting-started
+```
+
 
 
 
