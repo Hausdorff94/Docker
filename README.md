@@ -3,11 +3,13 @@
 ## Commands
 
 ### Run image
+Run a new container, and clone the image if don't exist.
 ```bash
 docker run <NAME_IMAGE:VERSION>
 ```
 
 ### Clone image
+Clone the image, but not run the container.
 ```bash
 docker pull <NAME_IMAGE:VERSION>
 ```
@@ -39,7 +41,8 @@ docker logs <CONTAINER_ID>
 docker logs <CONTAINER_NAME>
 ```
 
-### Execute command in a container
+### Execute a command in a current running container
+
 ```bash
 docker exec -it <CONTAINER_id>
 ```
