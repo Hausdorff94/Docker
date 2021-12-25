@@ -6,6 +6,8 @@ RUN apt-get install python3-pip -y
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN DEBIAN_FRONTEND=noninteractive apt-get install software-properties-common -y
 RUN DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:ubuntugis/ppa
+RUN apt-get install vim -y
+RUN apt-get install git -y
 RUN apt-get update -y
 RUN apt-get install gdal-bin -y
 RUN apt-get install libgdal-dev -y 
